@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <form> <!-- v1.1 -->
+    <form> <!-- v1.2 -->
         <label for="name">Name:</label>
-        <input type="text" name="userName" id="name">
+        <input type="text" name="userName" id="name" required>
 
         <br><br>
 
         <label for="fname">Father Name:</label>
         <input type="text" name="userFName" id="fname">
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="userEmail" id="email" required>
 
         <br><br>
 
@@ -23,7 +30,7 @@
         <br><br>
 
         <label for="pass">Password:</label>
-        <input type="password" name="userPass" id="pass">
+        <input type="password" name="userPass" id="pass" required>
 
         <br><br>
 
@@ -33,12 +40,40 @@
         <label for="female">Female</label>
         <input type="radio" name="gender" id="pns" value="pns">
         <label for="pns">Prefer not to say</label>
-        
+
+        <br><br>
+
+        <label for="terms"></label>
+        <input type="checkbox" name="terms" id="terms" required value="accepted">
+        <label for="terms">I agree to the terms and conditions</label>
         <br><br>
 
         <input type="submit">
     </form>
     <!-- Expected Output on Submit (Browser) -->
     <!-- http://localhost:<port>/class-4/class-4.html?userName=Rohit&userFName=Ram&userAge=28&userPass=fqfqfqfqfq&gender=male -->
+    
+    
+    <!-- Copyrights -->
+    <footer style="
+    padding: 20px 0;
+    width: 100%;
+    border-top: 1px solid #eee;
+    margin-top: 40px;
+  ">
+        <p style="
+      text-align: center;
+      font-family: sans-serif;
+      color: #666;
+      font-size: 14px;
+      margin: 0;
+    ">
+            &copy; 2026 <strong>Safwan Ehfaz Saad</strong>. Released under the
+            <a href="https://opensource.org/licenses/MIT" target="_blank"
+                style="color: #007bff; text-decoration: none">MIT
+                License</a>.
+        </p>
+    </footer>
 </body>
+
 </html>
